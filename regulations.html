@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相關法規</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <script>
+    const startTime = performance.now();
+    window.onload = () => {
+      const endTime = performance.now();
+      const seconds = ((endTime - startTime) / 1000).toFixed(2);
+      document.getElementById("loadTime").textContent = `頁面載入時間：${seconds} 秒`;
+    };
+  </script>
+<body>
+  <header>
+    <div class="header">
+        <img src="/img/wdi8.png" alt="霸凌平台LOGO"></a>
+        <ul class="menu">
+            <li><a href="jwa_index.html">首頁</a></li>
+            <li><a href="jwa_inputCase.html">提出申訴</a></li>
+            <li><a href="jwa_query.html">查詢案件</a></li>
+            <li><a href="regulations.html">相關法規</a></li>
+        </ul>
+    </div>
+  </header>
+
+   <main>
+    <h1>相關法規</h1>
+    <table>
+      <tr>
+        <td>序號</td>
+        <td>法規名稱</td>
+      </tr>
+      <tr>
+        <td align="center">1</td>
+        <td><a href="https://legal.judicial.gov.tw/FLAW/dat02.aspx?lsid=FL000632&ot=in">行政程序法</a></td>
+      </tr>
+      <tr>
+        <td align="center">2</td>
+        <td><a href="https://legal.judicial.gov.tw/FLAW/dat02.aspx?lsid=FL019258&ot=in">司法院處理人民陳述案件應行注意事項</a></td>
+      </tr>
+      <tr>
+        <td align="center">3</td>
+        <td><a href="https://search.law.intraj/FLAW/dat02.aspx?lsid=FL101517&ot=in">司法院職場霸凌防治與申訴處理作業注意事項</a></td>
+      </tr>
+      <tr>
+        <td align="center">4</td>
+        <td><a href="https://search.law.intraj/FLAW/dat02.aspx?lsid=FL039194&ot=in">司法院性騷擾防治申訴及調查處理要點</a></td>
+      </tr>
+      <tr>
+        <td align="center">5</td>
+        <td><a href="https://search.law.intraj/FLAW/dat02.aspx?lsid=FL021038&ot=in">司法院工作場所性騷擾防治措施申訴及處理要點</a><br>
+         原名稱：司法院防治及處理性擾要點</td>
+      </tr>
+    </table>
+   </main>
+
+ <footer>
+    職場霸凌、性騷擾申訴案件通報專責平臺 VCOPY版<br>
+    司法院版權所有2024-2025<br><span id="loadTime"></span>
+  </footer>
+
+</body>
+</html>

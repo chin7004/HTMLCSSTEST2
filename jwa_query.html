@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>查詢進度</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    table {
+      width: 100%;
+      margin-top: 2rem;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: center;
+    }
+    th {
+      background-color: #eee;
+    }
+    footer {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header">
+        <img src="/img/wdi8.png" alt="霸凌平台LOGO"></a>
+        <ul class="menu">
+            <li><a href="jwa_index.html">首頁</a></li>
+            <li><a href="jwa_inputCase.html">提出申訴</a></li>
+            <li><a href="jwa_query.html">查詢案件</a></li>
+            <li><a href="regulations.html">相關法規</a></li>
+        </ul>
+    </div>
+  </header>
+
+  <main>
+    <h1>查詢案件</h1>
+    <div style="text-align: center; margin: 20px;">
+      <label for="searchName">請輸入申訴人姓名：</label>
+      <input type="text" id="searchName" placeholder="請輸入姓名">
+      <button onclick="searchComplaints()">查詢</button>
+    </div>
+    <div id="message"></div>
+
+    <table id="complaintTable" border="1" style="display: none; margin:20px auto; border-collapse:collapse;">
+      <thead>
+        <tr>
+          <th>案號</th>
+          <th>系統時間</th>
+          <th>機關</th>
+          <th>起迄時間</th>
+          <th>類別</th>
+          <th>申訴人</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <footer>
+    職場霸凌、性騷擾申訴案件通報專責平臺 山寨版<br>
+    版權所有2025<br><span id="loadTime"></span>
+  </footer>
+  <script src="all.js"></script>
+</body>
+</html>

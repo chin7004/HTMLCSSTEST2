@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>提出申訴</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+        <img src="/img/wdi8.png" alt="霸凌平台LOGO">
+        <ul class="menu">
+            <li><a href="jwa_index.html">首頁</a></li>
+            <li><a href="jwa_inputCase.html">提出申訴</a></li>
+            <li><a href="jwa_query.html">查詢案件</a></li>
+            <li><a href="regulations.html">相關法規</a></li>
+        </ul>
+    </div>
+  </header>
+
+  <main>
+    <h1>提出申訴</h1>
+    <form id="complaintForm" onsubmit="submitForm(event)">
+      <section id="sec-info">
+        <h2>申訴事由資訊</h2>
+        <label for="organ">發生機關 <span class="note">（必填）</span></label>
+        <select id="organ" name="organ" required>
+          <option value="">請選擇</option>
+        </select>
+
+        <label for="dpt">任職單位</label>
+        <input type="text" id="dpt" name="dpt">
+
+        <label>發生時間</label>
+        <div class="row-group">
+          <select id="syy" name="syy">
+            <option value="">選擇西元年</option>
+          </select>
+          <select id="smm" name="smm">
+            <option value="">選擇月份</option>
+          </select>
+          <select id="eyy" name="eyy">
+            <option value="">選擇西元年</option>
+          </select>
+          <select id="emm" name="emm">
+            <option value="">選擇月份</option>
+          </select>
+        </div>
+
+        <label>是否為首長涉案</label>
+        <div class="radio-group">
+          <label><input type="radio" name="isChief" value="是"> 是</label>
+          <label><input type="radio" name="isChief" value="否"> 否</label>
+        </div>
+
+        <label>申訴事由類別 <span class="note">（必填）</span></label>
+        <div class="checkbox-inline">
+          <label><input type="checkbox" name="comp_Class" value="職場霸凌"> 職場霸凌</label>
+          <label><input type="checkbox" name="comp_Class" value="性騷擾"> 性騷擾</label>
+        </div>
+
+        <label for="statement">具體說明</label>
+        <textarea id="statement" name="statement" rows="5"></textarea>
+      </section>
+
+      <section id="sec-complainant">
+        <h2>申訴人資訊</h2>
+        <label for="compName">申訴人姓名 <span class="note">（必填，未填具真實姓名，不予受理）</span></label>
+        <input type="text" id="compName" name="compName" required>
+
+        <label for="comptel">申訴人聯絡電話</label>
+        <input type="tel" id="comptel" name="comptel">
+
+        <label for="compmail">申訴人電子郵件</label>
+        <input type="email" id="compmail" name="compmail">
+      </section>
+
+      <div class="buttons">
+        <button type="submit" class="submit-btn">送出申請</button>
+        <button type="reset" class="reset-btn">清除重寫</button>
+        <button type="button" class="back-btn" onclick="history.back()">回前頁</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    職場霸凌、性騷擾申訴案件通報專責平臺 山寨版<br>
+    版權所有2025<br><span id="loadTime"></span>
+  </footer>
+  <script src="all.js"></script>
+</body>
+</html>

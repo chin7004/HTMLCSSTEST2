@@ -1,0 +1,166 @@
+ul {
+	list-style: none;
+}
+a {
+    text-decoration: none;
+    line-height: 1.5;
+}
+/* table {
+	border-collapse: collapse; 
+	border-spacing: 0;
+    margin: 0 auto;   
+}
+td{
+    border-bottom:1px solid #000;
+    padding:10px;
+} */
+
+    table {
+      width: 100%;
+      margin-top: 2rem;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      /* text-align: center; */
+    }
+body {
+    font-family: "Microsoft JhengHei", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+header {
+    /* background-color: #e0e0e0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem 2rem; */
+  }
+ 
+    h1 {
+      font-size: 1.8rem;
+      border-bottom: 3px solid #ccc;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+.header{
+  width: 90%;
+  margin: 0 auto;
+  background:#dfe9e5;
+}
+.header img{
+    width: 100%;
+    height: 200px;
+}
+.menu{
+  display: flex;
+  align-items: center;
+}
+.menu li{
+  width: 90px;
+  text-align: center;
+}
+.menu li a{
+  color: #37523d;
+  display: block;
+  /* text-decoration: none;  */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.menu li a:hover{
+  background: #37523d;
+  color: #fff;
+}
+.menu li a:active{
+  transform: scale(1.2);
+}
+
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    main p {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      color: #333;
+      font-size: 1.1rem;
+    }
+    section {
+      background-color: white;
+      border: 1px solid #ccc;
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    section h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea, button {
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    select {
+      width: 49%;
+    }
+    .row-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 2%;
+    }
+    .radio-group, .checkbox-inline {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    textarea {
+      width: 100%;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: #c00;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .submit-btn {
+      background-color: #007BFF;
+      color: white;
+      margin: 0 10px;
+      width: 100px;
+    }
+    .reset-btn {
+      background-color: #f0ad4e;
+      color: white;
+      margin: 0 10px;
+      width: 100px;
+    }
+    .back-btn {
+      background-color: #6c757d;
+      color: white;
+      margin: 0 10px;
+      width: 100px;
+    }
+
+    footer {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
